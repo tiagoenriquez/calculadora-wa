@@ -1,19 +1,27 @@
-# README
+# Calculadora
 
-## About
+É mais uma calculadora desenvolvida por mim. Mas, dessa vez, fiz com o framework wails, que usa Go no backend e tecnologias web no frontend. E a calculadora resolve expressões complexas com as operações básicas da Matemática de acordo com as regras de prioridade da Matemática. Resolve expressões entre parênteses antes das potências, estas antes das multiplicações, divisões e cálculo de resto e estes antes das somas e subtrações
 
-This is the official Wails React-TS template.
+## Tecnologias utilizadas
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+<li>Wails</li>
+<li>Go</li>
+<li>Typescript</li>
+<li>Reacy</li>
 
-## Live Development
+## Como rodar em modo de desenvolvimento
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+A primeira etapa para rodar em modo de desenvolvimento é se certificar de que o sistema operacional tem as bibliotecas necessárias para o funcionamento do software. Eu desenvolvi em Linux, portanto tive que instalar as dependências relacionadas ao GTK.<br>
+A segunda etapa é se certificar de que a versão do Go instalada no sistema operacional é compatível com o Wails.<br>
+Para rodar os comandos do Wails, é necessário instalar o Wails-CLI.<br>
+O comando para rodar a aplicação em modo dev é:
 
-## Building
+```
+wails dev
+```
 
-To build a redistributable, production mode package, use `wails build`.
+E para gerar o executável:
+
+```
+wails build
+```
