@@ -1,0 +1,106 @@
+:root {
+    --cor-clara: rgb(159, 159, 159);
+    --cor-escura: rgb(32, 32, 32);
+    --cor-muito-clara: rgb(207, 207, 207);
+    --cor-muito-escura: rgb(32, 32, 32);
+    --cor-pouco-clara: rgb(112, 112, 112);
+    --cor-pouco-escura: rgb(48, 48, 48);
+    --cor-principal: rgb(64, 64, 64);
+    --familha-da-fonte: monospace;
+    --tamanho-da-fonte: 16px;
+}
+
+body {
+    background-color: var(--cor-muito-escura);
+    margin: 0px;
+}
+
+button {
+    background-color: var(--cor-muito-escura);
+    color: var(--cor-muito-clara);
+    cursor: pointer;
+    font-family: var(--familha-da-fonte);
+    font-size: var(--tamanho-da-fonte);
+    height: 48px;
+    min-width: 48px;
+}
+
+button:hover {
+    background-color: var(--cor-principal);
+}
+
+button:active {
+    background-color: var(--cor-muito-clara);
+    color: var(--cor-muito-escura);
+}
+
+header {
+    background-color: var(--cor-muito-escura);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 48px;
+    width: 100vw;
+}
+
+input {
+    font-family: var(--familha-da-fonte);
+    font-size: var(--tamanho-da-fonte);
+    height: 48px;
+    margin: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 424px;
+    overflow-x: auto;
+    width: 100vw;
+}
+
+p {
+    background-color: var(--cor-muito-escura);
+    color: var(--cor-muito-clara);
+    font-family: var(--familha-da-fonte);
+    font-size: var(--tamanho-da-fonte);
+    text-align: center;
+}
+
+.conta {
+    color: var(--cor-muito-clara);
+    cursor: pointer;
+    font-family: var(--familha-da-fonte);
+    font-size: var(--tamanho-da-fonte);
+    height: 48px;
+    text-align: center;
+    width: 100vw;
+}
+
+.conta:hover {
+    background-color: var(--cor-principal);
+}
+
+.conta:active {
+    background-color: var(--cor-muito-clara);
+    color: var(--cor-muito-escura);
+}
+
+.digito-button {
+    width: 48px;
+}
+
+.igual {
+    width: 204px
+}
+
+.item-de-menu {
+    border: none;
+}
+
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+}
